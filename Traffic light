@@ -1,15 +1,19 @@
-int AkshithaRed=2;
+int AkshithaRed=2; ///North///
 int AkshithaYellow=3;
 int AkshithaGreen=4;
-int AnjaliRed=5;
+
+int AnjaliRed=5; ///East///
 int AnjaliYellow=6;
 int AnjaliGreen=7;
-int KeerthanaRed=8;
+
+int KeerthanaRed=8; ///West///
 int KeerthanaYellow=9;
 int KeerthanaGreen=10;
-int JeshwanthRed=11;
+
+int JeshwanthRed=11; ///South///
 int JeshwanthYellow=12;
 int JeshwanthGreen=13;
+
 void setup(){
 pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
@@ -24,41 +28,43 @@ pinMode(11, OUTPUT);
 pinMode(12, OUTPUT);
 pinMode(13, OUTPUT);
 }
+
 void loop(){
-digitalWrite(4, HIGH);//Akshitha//
+digitalWrite(2,LOW);
+digitalWrite(4,HIGH);///North///
 delay(5000);
-digitalWrite(4, LOW);
-digitalWrite(3, HIGH);
+digitalWrite(4,LOW);
+digitalWrite(3,HIGH);
 delay(2000);
-digitalWrite(3, LOW);
-digitalWrite(2, HIGH);
+digitalWrite(3,LOW);
+digitalWrite(2,HIGH);
 delay (2000);
 digitalWrite(2,LOW);
-digitalWrite(7, HIGH);//Anjali//
+digitalWrite(7,HIGH);//Anjali//
 delay(5000);
-digitalWrite(7, LOW);
-digitalWrite(6, HIGH);
+digitalWrite(7,LOW);
+digitalWrite(6,HIGH);
 delay(2000);
-digitalWrite(6, LOW);
-digitalWrite(5, HIGH);
+digitalWrite(6,LOW);
+digitalWrite(5,HIGH);
 delay(2000);
 digitalWrite(5,LOW);
-digitalWrite(10, HIGH);//Keerthana//
+digitalWrite(10,HIGH);//Keerthana//
 delay(5000);
-digitalWrite(10, LOW);
-digitalWrite(9, HIGH);
+digitalWrite(10,LOW);
+digitalWrite(9,HIGH);
 delay(2000);
-digitalWrite(9, LOW);
-digitalWrite(8, HIGH);
+digitalWrite(9,LOW);
+digitalWrite(8,HIGH);
 delay(2000);
 digitalWrite(8,LOW);
-digitalWrite(13, HIGH);//Jeshwanth//
+digitalWrite(13,HIGH);//Jeshwanth//
 delay(5000);
-digitalWrite(13, LOW);
-digitalWrite(12, HIGH);
+digitalWrite(13,LOW);
+digitalWrite(12,HIGH);
 delay(2000);
-digital Write(12, LOW);
-digitalWrite(11, HIGH);
+digital Write(12,LOW);
+digitalWrite(11,HIGH);
 delay(2000);
 digitalWrite(11,LOW);
 }
