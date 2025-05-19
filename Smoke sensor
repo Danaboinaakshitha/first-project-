@@ -4,8 +4,8 @@
 const int SmokeSensor=A0;
 const int buzzer=7;//for alert 
 const int relay=6;// for water pump
- const int led=8;//
- const int normal Threshold=200;//lessthan200
+const int led=8;
+const int normal Threshold=200;//lessthan 200
 const int medium Threshold=400;//between 200 and 400
 LiquidCrystal_12C 1cd(0*27, 16,2);
 
@@ -18,9 +18,9 @@ PinMode(led, OUTPUT);
 Serial.begin(9600);
 lcd.int();
 lcd.backlight();
- lcd.setCursor(0, 0);
+lcd.setCursor(0, 0);
 lcd.print("Smoke Detector");
- delay(2000);
+delay(2000);
 lcd.clear();
 }
 
