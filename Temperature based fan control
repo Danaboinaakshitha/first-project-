@@ -1,0 +1,34 @@
+#define <Dth.h>
+#define Dth11=7;
+#define intA=3;
+#define intB=4;
+#define EnbA=8;
+#define DTHType Dth11;
+Void setup(){
+pinMode(7, INPUT);
+pinMode(intA, OUTPUT);
+pinMode(intB, OUTPUT);
+pinMode(EnbA, OUTPUT);
+Serial.begin(9600);
+Serial.read(Dth11);
+}
+Void loop(){
+Float temp=dth.read temperature ();
+digitalWrite (EnbA,fan speed);
+Serial.print("unable to read the Dth11 sensor values");
+Serial.begin(9600);
+Serial.print("Temperature:___");
+Serial.print("F/C Temperature ___");
+if (temp<30){
+Fan speed=0;
+Serial.print("normal temperature");
+}
+else if (temp>=30){
+Fan speed=128;
+Serial.print("medium temperature");
+}
+else {
+Fan speed=255;
+Serial.print("High temperature");
+}
+}
