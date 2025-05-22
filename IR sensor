@@ -6,9 +6,9 @@ pinMode(9, OUTPUT);
 }
 Void loop(){
 if (digitalWrite(7)==HIGH){ // IR sensor is detected 
-digitalWrite (9,HIGH)//relay should ON
+digitalWrite (9,HIGH);//relay should ON
 }
 else {
-digitalWrite(9,LOW)// relay should OFF
+digitalWrite(9,LOW);// relay should OFF
 }
 }
